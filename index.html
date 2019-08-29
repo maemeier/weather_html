@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/d36569d435.js"></script>
+    <script>
+      function blink() {
+        $("iconPM")
+          .delay(300)
+          .fadeTo(300, 5.5)
+          .delay(300)
+          .fadeTo(300, 5.5, blink);
+      }
+
+      $(document).ready(function() {
+        blink();
+      });
+    </script>
+
+    <title>Weather App by FYNI</title>
+  </head>
+  <body>
+    <h1>WEATHER FINDER</h1>
+    <div class="mainDiv">
+      <div class="divLeft">
+        <div class="divContent">
+          <h3>Check the Weather</h3>
+          <h3>Condition and more...</h3>
+        </div>
+      </div>
+
+      <div class="divRight">
+        <p>Search the Weather</p>
+
+        <h6>Hagglingen, Switzerland</h6>
+        <span class="iconPM"></span>
+        <h6>It's raining</h6>
+        <h6>Hagglingen, Switzerland</h6>
+        <h2>19</h2>
+      </div>
+    </div>
+  </body>
+</html>
